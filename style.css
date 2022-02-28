@@ -76,3 +76,114 @@ section#apropos .container .image {
 section#apropos .container .image img{
     width: 100%;
 }
+
+/* Second Section */
+section#contact .informations {
+    position: relative;
+    background-color: #f04b4b;
+    height: 160.5px;
+}
+
+section#contact .informations .container{
+    position: relative;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.card {
+    top: 20%;
+    padding: 0 15px;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #fff;
+}
+
+div.img {
+    text-align: center;
+    color: rgb(37, 37, 228);
+    margin-top: 15%;
+}
+
+div.title {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+section#contact .getintouch {
+    background-color: rgba(99, 99, 238, 0.5);
+    padding-top: 10%;
+    color: #fff;
+}
+
+div.getintouch div.container {
+    display: flex;
+    align-content: space-between;
+}
+
+.form-box {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 80px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+h1.bold {
+    margin-top: 0;
+}
+
+.text {
+    width: 50%;
+    overflow: hidden;
+    margin: 0 80px;
+}
+
+.textbox {
+    width: 100%;
+    overflow: hidden;
+    padding: 8px 0 0 0;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 10px;
+}
+
+.textbox textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.btn {
+    width: 100%;
+    background: none;
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    padding: 5px;
+    margin-bottom: 30%;
+}
+
+ul li {
+    display: inline;
+    padding: 0 10px 0 10px;
+}
+
+ul li a i {
+    color: #fff;
+}
