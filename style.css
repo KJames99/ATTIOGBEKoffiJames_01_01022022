@@ -50,7 +50,7 @@ header nav {
 }
 
 header .highlight, header .current a {
-    color: #e8491d;
+    color: #4c8dcb;
     font-weight: bold;
 }
 
@@ -80,7 +80,7 @@ section#apropos .container .image img{
 /* Second Section */
 section#contact .informations {
     position: relative;
-    background-color: #f04b4b;
+    background-color: #dc545a;
     height: 160.5px;
 }
 
@@ -114,7 +114,7 @@ div.title {
 }
 
 section#contact .getintouch {
-    background-color: rgba(99, 99, 238, 0.5);
+    background-color: #478ac9;
     padding-top: 10%;
     color: #fff;
 }
@@ -156,17 +156,17 @@ h1.bold {
     border-bottom: 1px solid;
 }
 
-.textbox input {
+.textbox input, .textbox textarea {
     border: none;
     outline: none;
     background: none;
     padding: 0 10px;
+    color: #fff;
+    font-family: Arial;
 }
 
-.textbox textarea {
-    border: none;
-    outline: none;
-    background: none;
+.textbox input::placeholder, .textbox textarea::placeholder {
+    color: #a0c3e3;
 }
 
 .btn {
@@ -190,10 +190,10 @@ ul.icons li {
 }
 
 ul.icons li a i {
-    color: #fff;
+    color: #478ac9;
 }
 
-/*Third section*/
+/* Third section */
 .approach {
     background-image: url("mountains.png");
     background-position: center;
@@ -216,7 +216,7 @@ ul.icons li a i {
 }
 
 .approach h2 {
-    color : yellow;
+    color : #f1c50f;
 }
 
 .approach ul.list {
