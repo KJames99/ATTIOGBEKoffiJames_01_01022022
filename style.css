@@ -201,6 +201,7 @@ ul.icons li a i {
     background-size: cover;
     position: relative;
     margin-top: -50px;
+    margin-bottom: 0;
     opacity: 0.9;
 }
 
@@ -227,4 +228,30 @@ ul.icons li a i {
 
 .approach ul.list li p {
     margin: 0;
+}
+
+/* Footer */
+footer {
+    color: #fff;
+    background-color: #333333;
+    text-align: center;
+}
+
+footer div.rights {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+footer div.rights {
+    margin-top: 40px;
+    margin-bottom: 150px;
+}
+
+footer div.template {
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.template a {
+    color: #90a8be;
 }
