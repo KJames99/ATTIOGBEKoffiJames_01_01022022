@@ -17,11 +17,6 @@ section {
     margin: 50px 0;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-}
-
 /* Header */
 header {
     padding-top: 30px;
@@ -38,6 +33,11 @@ header a {
 header .container {
     display: flex;
     justify-content: space-between;
+}
+
+header ul.nav {
+    margin: 0;
+    padding: 0;
 }
 
 header li {
@@ -179,11 +179,52 @@ h1.bold {
     margin-bottom: 30%;
 }
 
-ul li {
+ul.icons {
+    margin: 0;
+    padding: 0;
+}
+
+ul.icons li {
     display: inline;
     padding: 0 10px 0 10px;
 }
 
-ul li a i {
+ul.icons li a i {
     color: #fff;
+}
+
+/*Third section*/
+.approach {
+    background-image: url("mountains.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: -50px;
+    opacity: 0.9;
+}
+
+.approach .container {
+    height: 600px;
+}
+
+.logo-nextboxx {
+    position: relative;
+    float: right;
+    bottom: -30%;
+}
+
+.approach h2 {
+    color : yellow;
+}
+
+.approach ul.list {
+    color: white;
+    list-style-type: circle;
+    margin-top: -20px;
+    padding-left: 20px;
+}
+
+.approach ul.list li p {
+    margin: 0;
 }
