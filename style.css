@@ -8,9 +8,13 @@ body {
 
 /* Global */
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     overflow: hidden;
+}
+
+h1 {
+    font-size: 30px;
 }
 
 section {
@@ -49,15 +53,20 @@ header nav {
     margin-top: 10px;
 }
 
-header .highlight, header .current a {
-    color: #4c8dcb;
+header .highlight, header a:hover {
+    color: #5795ce;
+}
+
+header .highlight, header a:active {
+    color: #5795ce;
     font-weight: bold;
 }
 
-/* First Section */
+/*----------------------------------------------------------------*/
+/*------------------------- First Section ------------------------*/
+/*----------------------------------------------------------------*/
 section#apropos .container .apropos {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
@@ -65,19 +74,39 @@ section#apropos .container .apropos {
 section#apropos .apropos_text {
     text-align: center;
     margin: 0 20px;
-    width: 50%;
 }
 
 section#apropos .container .image {
     color: #000;
-    width: 50%;
+}
+
+/* Medium devices and large devices (768px and up) */
+@media only screen and (min-width: 768px) {
+    section#apropos .container .apropos {
+        justify-content: space-between;
+    }
+    
+    section#apropos .apropos_text {
+        width: 50%;
+    }
+
+    section#apropos .container .image {
+        width: 50%;
+    }
+}
+
+section#apropos .apropos_text p {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 section#apropos .container .image img{
     width: 100%;
 }
 
-/* Second Section */
+/*-----------------------------------------------------------------*/
+/*------------------------- Second Section ------------------------*/
+/*-----------------------------------------------------------------*/
 section#contact .informations {
     position: relative;
     background-color: #dc545a;
@@ -102,7 +131,7 @@ div.card {
 
 div.img {
     text-align: center;
-    color: rgb(37, 37, 228);
+    color: #478ac9;
     margin-top: 15%;
 }
 
@@ -122,6 +151,10 @@ section#contact .getintouch {
 div.getintouch div.container {
     display: flex;
     align-content: space-between;
+}
+
+div.getintouch div.container div.text, div.getintouch div.container div.form-box {
+    margin: 0 50px;
 }
 
 .form-box {
@@ -190,10 +223,12 @@ ul.icons li {
 }
 
 ul.icons li a i {
-    color: #478ac9;
+    color: #fff;
 }
 
-/* Third section */
+/*----------------------------------------------------------------*/
+/*------------------------- Third Section ------------------------*/
+/*----------------------------------------------------------------*/
 .approach {
     background-image: url("mountains.png");
     background-position: center;
@@ -212,7 +247,7 @@ ul.icons li a i {
 .logo-nextboxx {
     position: relative;
     float: right;
-    bottom: -30%;
+    bottom: -40%;
 }
 
 .approach h2 {
@@ -230,7 +265,9 @@ ul.icons li a i {
     margin: 0;
 }
 
-/* Footer */
+/*---------------------------------------------------------*/
+/*------------------------- Footer ------------------------*/
+/*---------------------------------------------------------*/
 footer {
     color: #fff;
     background-color: #333333;
