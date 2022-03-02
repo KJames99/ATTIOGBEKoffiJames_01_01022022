@@ -95,6 +95,22 @@ section#apropos .container .image {
     }
 }
 
+/* Small devices (768px and down) */
+@media only screen and (max-width: 768px) {
+    section#apropos .container .apropos {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section#apropos .apropos_text {
+        width: 100%;
+    }
+
+    section#apropos .container .image {
+        width: 100%;
+    }
+}
+
 section#apropos .apropos_text p {
     margin-left: 0;
     margin-right: 0;
