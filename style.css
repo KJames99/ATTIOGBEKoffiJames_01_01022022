@@ -13,6 +13,20 @@ body {
     overflow: hidden;
 }
 
+/* Medium devices and large devices (1025px and up) */
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 70%;
+    }
+}
+
+/* Medium devices and large devices (1441px and up) */
+@media only screen and (min-width: 1441px) {
+    .container {
+        width: 40%;
+    }
+}
+
 h1 {
     font-size: 30px;
 }
@@ -21,7 +35,9 @@ section {
     margin: 50px 0;
 }
 
-/* Header */
+/*---------------------------------------------------------*/
+/*------------------------- HEADER ------------------------*/
+/*---------------------------------------------------------*/
 header {
     padding-top: 30px;
     margin-bottom: 30px;
@@ -62,6 +78,35 @@ header .highlight, header a:active {
     font-weight: bold;
 }
 
+div.menu-toggle {
+    display: none;
+}
+
+/* Medium devices and large devices (768px and down) */
+@media only screen and (max-width: 768px) {
+    div.menu-toggle {
+        display: block;
+        color: #000;   
+        right: 0;   
+    }
+
+    ul.nav {
+        display: none;
+    }
+}
+
+/* Small devices (769px and down) */
+@media only screen and (max-width: 769px) {
+    div.menu-toggle {
+        display: block;
+        color: #000; 
+    }
+
+    ul.nav {
+        display: none;
+    }
+}
+
 /*----------------------------------------------------------------*/
 /*------------------------- First Section ------------------------*/
 /*----------------------------------------------------------------*/
@@ -95,8 +140,8 @@ section#apropos .container .image {
     }
 }
 
-/* Small devices (768px and down) */
-@media only screen and (max-width: 768px) {
+/* Small devices (769px and down) */
+@media only screen and (max-width: 769px) {
     section#apropos .container .apropos {
         flex-direction: column;
         justify-content: space-between;
@@ -126,23 +171,24 @@ section#apropos .container .image img{
 section#contact .informations {
     position: relative;
     background-color: #dc545a;
-    height: 160.5px;
+    height: 160px;
 }
 
-section#contact .informations .container{
+section#contact .informations .container {
     position: relative;
     top: 35%;
     display: flex;
     justify-content: space-between;
+    flex: 100%;
 }
 
 div.card {
     top: 20%;
-    padding: 0 15px;
+    padding: 0 8px 40px 8px;
     width: 200px;
-    height: 200px;
     text-align: center;
     background-color: #fff;
+    color: #000;
 }
 
 div.img {
@@ -160,23 +206,58 @@ div.title {
 
 section#contact .getintouch {
     background-color: #478ac9;
-    padding-top: 10%;
+    padding-top: 13%;
     color: #fff;
 }
 
 div.getintouch div.container {
     display: flex;
+    flex-wrap: wrap;
     align-content: space-between;
 }
 
 div.getintouch div.container div.text, div.getintouch div.container div.form-box {
-    margin: 0 50px;
+    margin: 0 4.5%;
+    flex: 40%
 }
 
-.form-box {
-    width: 50%;
-    overflow: hidden;
-    margin: 0 80px;
+/* Medium devices (992 and down) */
+@media only screen and (max-width: 992px) {
+    section#contact .informations .container {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    div.card {
+        flex: 37%;
+        margin: 2%;
+        padding: 0 8px 40px 8px;
+    }
+
+    section#contact .getintouch {
+        padding-top: 50%;
+    }
+}
+
+/* Small devices (767px and down) */
+@media only screen and (max-width: 767px) {
+    section#contact .informations .container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    div.card {
+        width: 90%;
+        padding: 0 8px 40px 8px;
+    }
+
+    section#contact .getintouch {
+        padding-top: 180%;
+    }
+
+    div.getintouch div.container div.text {
+        margin-bottom: 50px;
+    }
 }
 
 .bold {
@@ -189,12 +270,6 @@ div.getintouch div.container div.text, div.getintouch div.container div.form-box
 
 h1.bold {
     margin-top: 0;
-}
-
-.text {
-    width: 50%;
-    overflow: hidden;
-    margin: 0 80px;
 }
 
 .textbox {
@@ -264,6 +339,24 @@ ul.icons li a i {
     position: relative;
     float: right;
     bottom: -40%;
+}
+
+.logo-nextboxx img {
+    width: 600px;
+}
+
+/* Medium devices (992 and down) */
+@media only screen and (max-width: 992px) {
+    .logo-nextboxx img {
+        width: 600px;
+    }
+}
+
+/* Small devices (767px and down) */
+@media only screen and (max-width: 767px) {
+    .logo-nextboxx img {
+        width: 300px;
+    }
 }
 
 .approach h2 {
