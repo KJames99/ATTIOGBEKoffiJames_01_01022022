@@ -2,8 +2,8 @@ body {
     font-family: Arial;
     font-size: 15px;
     line-height: 1.5;
-    padding: 0;
-    margin: 0;
+    max-width: 1441px;
+    margin: auto;
 }
 
 /* Global */
@@ -11,20 +11,6 @@ body {
     width: 90%;
     margin: auto;
     overflow: hidden;
-}
-
-/* Medium devices and large devices (1025px and up) */
-@media only screen and (min-width: 1025px) {
-    .container {
-        width: 70%;
-    }
-}
-
-/* Medium devices and large devices (1441px and up) */
-@media only screen and (min-width: 1441px) {
-    .container {
-        width: 40%;
-    }
 }
 
 h1 {
@@ -82,31 +68,6 @@ div.menu-toggle {
     display: none;
 }
 
-/* Medium devices and large devices (768px and down) */
-@media only screen and (max-width: 768px) {
-    div.menu-toggle {
-        display: block;
-        color: #000;   
-        right: 0;   
-    }
-
-    ul.nav {
-        display: none;
-    }
-}
-
-/* Small devices (769px and down) */
-@media only screen and (max-width: 769px) {
-    div.menu-toggle {
-        display: block;
-        color: #000; 
-    }
-
-    ul.nav {
-        display: none;
-    }
-}
-
 /*----------------------------------------------------------------*/
 /*------------------------- First Section ------------------------*/
 /*----------------------------------------------------------------*/
@@ -119,41 +80,12 @@ section#apropos .container .apropos {
 section#apropos .apropos_text {
     text-align: center;
     margin: 0 20px;
+    width: 50%;
 }
 
 section#apropos .container .image {
     color: #000;
-}
-
-/* Medium devices and large devices (768px and up) */
-@media only screen and (min-width: 768px) {
-    section#apropos .container .apropos {
-        justify-content: space-between;
-    }
-    
-    section#apropos .apropos_text {
-        width: 50%;
-    }
-
-    section#apropos .container .image {
-        width: 50%;
-    }
-}
-
-/* Small devices (769px and down) */
-@media only screen and (max-width: 769px) {
-    section#apropos .container .apropos {
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    section#apropos .apropos_text {
-        width: 100%;
-    }
-
-    section#apropos .container .image {
-        width: 100%;
-    }
+    width: 50%;
 }
 
 section#apropos .apropos_text p {
@@ -218,46 +150,7 @@ div.getintouch div.container {
 
 div.getintouch div.container div.text, div.getintouch div.container div.form-box {
     margin: 0 4.5%;
-    flex: 40%
-}
-
-/* Medium devices (992 and down) */
-@media only screen and (max-width: 992px) {
-    section#contact .informations .container {
-        flex-wrap: wrap;
-        align-content: center;
-    }
-    
-    div.card {
-        flex: 37%;
-        margin: 2%;
-        padding: 0 8px 40px 8px;
-    }
-
-    section#contact .getintouch {
-        padding-top: 50%;
-    }
-}
-
-/* Small devices (767px and down) */
-@media only screen and (max-width: 767px) {
-    section#contact .informations .container {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    div.card {
-        width: 90%;
-        padding: 0 8px 40px 8px;
-    }
-
-    section#contact .getintouch {
-        padding-top: 180%;
-    }
-
-    div.getintouch div.container div.text {
-        margin-bottom: 50px;
-    }
+    flex: 40%;
 }
 
 .bold {
@@ -345,20 +238,6 @@ ul.icons li a i {
     width: 600px;
 }
 
-/* Medium devices (992 and down) */
-@media only screen and (max-width: 992px) {
-    .logo-nextboxx img {
-        width: 600px;
-    }
-}
-
-/* Small devices (767px and down) */
-@media only screen and (max-width: 767px) {
-    .logo-nextboxx img {
-        width: 300px;
-    }
-}
-
 .approach h2 {
     color : #f1c50f;
 }
@@ -400,4 +279,104 @@ footer div.template {
 
 .template a {
     color: #90a8be;
+}
+
+/*----------------------------------------------------------------*/
+/*-------------- Medium devices (768px - 992px) ------------------*/
+/*----------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /*------------------------- HEADER ------------------------*/
+    div.menu-toggle {
+        display: block;
+        color: #000;   
+        right: 0;   
+    }
+
+    ul.nav {
+        display: none;
+    }
+
+    /*---------------------- First Section ---------------------*/
+    section#apropos .container .apropos {
+        justify-content: space-between;
+    }
+
+    /*--------------------- Second Section --------------------*/
+    section#contact .informations .container {
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    div.card {
+        flex: 37%;
+        margin: 2%;
+        padding: 0 8px 40px 8px;
+    }
+
+    section#contact .getintouch {
+        padding-top: 50%;
+    }
+
+    /*--------------------- Third Section --------------------*/
+    .logo-nextboxx img {
+        width: 600px;
+    }
+}
+
+/*----------------------------------------------------------------*/
+/*-------------- Small devices (768px and down) ------------------*/
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 768px) {
+    /*------------------------- HEADER ------------------------*/
+    div.menu-toggle {
+        display: block;
+        color: #000; 
+    }
+
+    ul.nav {
+        display: none;
+    }
+
+    /*---------------------- First Section ---------------------*/
+    section#apropos .container .apropos {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    section#apropos .apropos_text {
+        width: 100%;
+    }
+
+    section#apropos .container .image {
+        width: 100%;
+    }
+
+    /*--------------------- Second Section --------------------*/
+    section#contact .informations .container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    div.card {
+        width: 90%;
+        padding: 0 8px 40px 8px;
+        margin-bottom: 20px;
+    }
+
+    section#contact .getintouch {
+        padding-top: 180%;
+    }
+
+    div.getintouch div.container div.text {
+        margin-bottom: 50px;
+    }
+
+    div.getintouch div.container div.text, div.getintouch div.container div.form-box {
+        flex: 90%;
+    }
+
+    /*--------------------- Third Section --------------------*/
+    .logo-nextboxx img {
+        width: 300px;
+    }
 }
