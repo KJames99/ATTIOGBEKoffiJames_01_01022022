@@ -262,22 +262,22 @@ footer {
     text-align: center;
 }
 
-footer div.rights {
+section.rights {
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-footer div.rights {
+section.rights {
     margin-top: 40px;
     margin-bottom: 150px;
 }
 
-footer div.template {
+section.template {
     margin-top: 150px;
     margin-bottom: 40px;
 }
 
-.template a {
+section.template a {
     color: #90a8be;
 }
 
