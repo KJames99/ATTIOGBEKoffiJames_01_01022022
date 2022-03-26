@@ -100,27 +100,24 @@ article#apropos .container .image img{
 /*-----------------------------------------------------------------*/
 /*------------------------- Second Article ------------------------*/
 /*-----------------------------------------------------------------*/
-section.informations {
-    position: relative;
-    background-color: #dc545a;
-    height: 160px;
+article#contact {
+    background: linear-gradient(180deg, #dc545a 160px, #478ac9 160px);
 }
 
 section.informations .container {
-    position: relative;
-    top: 35%;
+    padding-top: 40px;
     display: flex;
     justify-content: space-between;
     flex: 100%;
 }
 
 section.card {
-    top: 20%;
     padding: 0 8px 40px 8px;
     width: 200px;
     text-align: center;
     background-color: #fff;
     color: #000;
+    border-radius: 5px;
 }
 
 div.img {
@@ -137,8 +134,7 @@ div.title {
 }
 
 section.getintouch {
-    background-color: #478ac9;
-    padding-top: 13%;
+    padding-top: 30px;
     color: #fff;
 }
 
@@ -194,6 +190,7 @@ h1.bold {
     background-color: #fff;
     padding: 5px;
     margin-bottom: 30%;
+    border-radius: 5px;
 }
 
 ul.icons {
@@ -313,13 +310,9 @@ section.template a {
         padding: 0 8px 40px 8px;
     }
 
-    section.getintouch {
-        padding-top: 50%;
-    }
-
     /*--------------------- Third Article --------------------*/
     .logo-nextboxx img {
-        width: 600px;
+        width: 400px;
     }
 }
 
@@ -361,10 +354,7 @@ section.template a {
         width: 90%;
         padding: 0 8px 40px 8px;
         margin-bottom: 20px;
-    }
-
-    section.getintouch {
-        padding-top: 180%;
+        margin: 2% auto;
     }
 
     section.text {
