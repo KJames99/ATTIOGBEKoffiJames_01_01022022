@@ -101,7 +101,7 @@ article#apropos .container .image img{
 /*------------------------- Second Article ------------------------*/
 /*-----------------------------------------------------------------*/
 article#contact {
-    background: linear-gradient(180deg, #dc545a 160px, #478ac9 160px);
+    background: linear-gradient(180deg, #e53b51 160px, #478ac9 160px);
 }
 
 section.informations .container {
@@ -126,11 +126,15 @@ div.img {
     margin-top: 15%;
 }
 
-div.title {
+h3.title {
     text-transform: uppercase;
-    font-size: 17px;
+    /*font-size: 17px;*/
     font-weight: bold;
     margin: 15px;
+}
+
+h4 {
+    margin: 0;
 }
 
 section.getintouch {
@@ -255,26 +259,26 @@ article.approach ul.list li p {
 /*---------------------------------------------------------*/
 footer {
     color: #fff;
-    background-color: #333333;
+    background-color: #090b0b ;
     text-align: center;
 }
 
-section.rights {
+div.rights {
     margin-top: 40px;
     margin-bottom: 50px;
 }
 
-section.rights {
+div.rights {
     margin-top: 40px;
     margin-bottom: 150px;
 }
 
-section.template {
+div.template {
     margin-top: 150px;
     margin-bottom: 40px;
 }
 
-section.template a {
+div.template a {
     color: #90a8be;
 }
 
